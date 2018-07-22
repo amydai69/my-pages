@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Guidelines for Science</title>
+</head>
+<body>
+    <h1 id="mainTitle">Guidelines for Science</h1>
+
+    <nav>
+        I am a...<br>
+        <button onclick="toggle_visibility('stakeholderAbout', 'scientistAbout')">Stakeholder of Science</button>
+        <button onclick="toggle_visibility('scientistAbout', 'stakeholderAbout')">Scientist</button>
+        <div id="stakeholderAbout" class=display>
+            We developed a checklist that allows any stakeholder to assess 
+            a paper for compliance with the scientific method. 
+            <a href="#forStakeholders">View the checklist here.</a> 
+            <br><br>
+            <details>
+                <summary>The guidelines are designed for use by, for example:</summary>
+                <ul>
+                    <li><i>Researchers</i> for determining which findings to cite, 
+                        and to ensure that their own papers comply</li>
+                    <li><i>Universities</i> to train, hire, promote, and fire scientists</li>
+                    <li><i>Funders</i> as part of contracts requiring scientific research</li>
+                    <li><i>Scientific journals</i> to select papers to publish, and to certify papers as scientific</li>
+                    <li><i>Managers</i> to assess the value of advice and information </li>
+                    <li><i>Courts</i> to assess the value of evidence</li>
+                    <li><i>Think tanks</i> to assess papers claiming to provide scientific 
+                        findings related to public policy</li>
+                    <li><i>Journalists</i> to report scientific findings, or to rank universities, 
+                        schools, and departments based on useful scientific findings</li>
+                    <li><i>Government regulators</i> to develop, revise, or remove regulations</li>
+                </ul>
+            </details>
+        </div>
+        <div id="scientistAbout" class=display>
+            <details>
+                <summary>Should I consider becoming a scientist?</summary>
+                <p>Given the importance of skeptics in science, you might also consider whether you 
+                    have the skeptic’s personality. The Oxford English Dictionary describes a skeptic 
+                    as “a seeker after truth who has not yet arrived at definite convictions.” Do you 
+                    often see something and wonder, “Is there a better way?” or “That doesn’t seem 
+                    right, I wonder if I can test it against other approaches?” </p>
+                <p>In addition, you might want to read biographies of highly creative scientists. 
+                    If you are not thinking “this is me!” at many passages, you may want to reconsider 
+                    your desire to be a scientist. The same holds for the Sinclair Lewis’s novel, 
+                    <i>Arrowsmith</i>, in which a skeptical medical scientist challenges the government 
+                    on how to stop an epidemic by using properly designed experiments.</p>
+            </details><br><br>
+            There are many ways to design a scientific project. As with any complex task, checklists 
+            will help in practicing science. We provide a checklist for complying with the scientific 
+            method. <a href="#scientistschecklist">View the Guidelines for Scientists here.</a>
+        </div>
+        
+    </nav>
+
+    <h2 id="forStakeholders" class="subtitle">Checklist of Criteria for Compliance with The Scientific Method</h2>
+    
+    <section id="instructions">
+        <h3>Instructions for Raters</h3>
+        <section>
+        <p>You should need less than 2 hours to skim the paper while you complete the checklist 
+            <em>a skeptical critic</em>.</p>
+        
+        <ol>
+            <li>Save a copy of this file with a filename that includes the first 3 words of the 
+                paper title, your last name, and the date.</li>
+            <li>Rate each lettered item (a-d) below as:
+                <ul>
+                    <li><em>T</em> (True) if the research complies</li>
+                    <li><em>na</em> (not applicable) </li>
+                    <li><em>F/?</em> (False) if the research does not comply, or if you are unsure</li>
+                </ul>
+                <em>IMPORTANT:</em> If you are not convinced that the paper complied, rate the item <em>F/?</em>.
+            </li>
+            <li>
+                If you rate an item <em>T</em>rue, give reasons for your rating in your own words
+                in the space provided below each item.
+            </li>
+            <li>
+                Rate criteria 1-8 as <em>T</em>rue only if all necessary lettered items 
+                (<em>na</em> option marked with <em id="necessary">*</em>)
+                for the criterion are rated <em>T</em>rue.
+                <br>
+                (Items with the na option marked <em id="necessary">*</em> are necessary for science, 
+                but are <em>not individually sufficient</em>.)
+            </li>
+        </ol>
+        </section>
+    </section>
+
+    <section id="checklist1">
+        <form>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>
+                        First assess whether the paper complies with the lettered items 
+                        under each criterion, below. Then assess whether it complies with 
+                        the criterion based on compliance with the subsidiary items. 
+                        Do not speculate.
+                    </th>
+                    <th>Complies?<br>(T | na | F/?)</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                
+                <colgroup>
+                    <col span="1" id="items">
+                    <col span="1" id="complies">
+                </colgroup>
+
+                <tr class="criterionrow">
+                    <td class="criterion" >1. Problem is important for decision making,
+                        policy, or method development.<br>
+                        <textarea class="largebox" placeholder="Your comments." onkeyup="adjustHeight(this)"></textarea>
+                    </td>
+                    <td>
+                        <input type="checkbox">Complies
+                    </td>
+                </tr>
+                <tr>
+                    <td class="letter"><b>a.</b> Importance of problem is clear from the
+                        <input type="checkbox">title
+                        <input type="checkbox">abstract
+                        <input type="checkbox">results tables
+                        <input type="checkbox">conclusions
+                        <br>(Rater: check each that applies.)<br>
+                        <textarea class="smallbox" placeholder="Your comments." onkeyup="adjustHeight(this)"></textarea>
+                    </td>
+                    <td class="center">
+                        <label><input name="C1A" type="radio" class="t">T</label>
+                        &nbsp;
+                        <label><input name="C1A" type="radio" class="f">F</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="letter"><b>b.</b> The findings add to cumulative scientific knowledge.<br>
+                        <textarea class="smallbox" placeholder="Your comments." onkeyup="adjustHeight(this)"></textarea>
+                    </td>
+                    <td class="center">
+                        <label><input name="C1B" type="radio">T</label>
+                        &nbsp;
+                        <label><input name="C1B" type="radio">F</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="letter"><b>c.</b> The findings can be used improve people’s lives without 
+                        resorting to duress or deceit<br>
+                        <textarea class="smallbox" placeholder="Your comments." onkeyup="adjustHeight(this)"></textarea> 
+                    </td>
+                    <td class="center">
+                        <label><input name="C1C" type="radio">T</label>
+                        &nbsp;
+                        <label><input name="C1C" type="radio">F</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="letter"><b>d.</b> Uses of the findings are important and <i>clear to you</i>.<br>
+                        <textarea class="smallbox" placeholder="Your comments." onkeyup="adjustHeight(this)"></textarea></td>
+                    <td class="center">
+                        <label><input name="C1D" type="radio">T</label>
+                        &nbsp;
+                        <label><input name="C1D" type="radio">F</label>
+                    </td>
+                </tr>
+                
+                <tr class="criterionrow">
+                    <td class="criterion">2. Prior scientific knowledge was comprehensively reviewed 
+                        and summarized.<br>
+                        <textarea class="largebox" placeholder="Your comments." onkeyup="adjustHeight(this)"></textarea>
+                    </td>
+                    <td><input type="checkbox">Complies</td>
+                </tr>
+                <tr>
+                    <td class="letter"><b>a.</b> The paper describes objective and comprehensive procedures 
+                        used to search for prior useful scientific knowledge.<br>
+                        <textarea class="smallbox" placeholder="Your comments." onkeyup="adjustHeight(this)"></textarea></td>
+                    <td class="center">
+                        <label><input name="C2A" type="radio">T</label>
+                        &nbsp;
+                        <label><input name="C2A" type="radio">F</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="letter"><b>b.</b> The paper describes how prior substantive findings were 
+                        used to develop hypotheses and research procedures.<br>
+                        <textarea class="smallbox" placeholder="Your comments." onkeyup="adjustHeight(this)"></textarea></td>
+                    <td class="center">
+                        <label><input name="C2B" type="radio">T</label>
+                        &nbsp;
+                        <label><input name="C2B" type="radio">F</label>
+                    </td>      
+                </tr>
+
+                <tr class="criterionrow">
+                    <td class="criterion">3. Disclosure is sufficiently comprehensive for 
+                        understanding and replication.<br>
+                        <textarea class="largebox" placeholder="Your comments." onkeyup="adjustHeight(this)"></textarea>
+                    </td>
+                    <td><input type="checkbox">Complies</td>
+                </tr>
+                <tr>
+                    <td class="letter"><b>a.</b> Prior hypotheses are clearly described 
+                        (e.g., regarding directions and magnitudes of relationships; 
+                        effects of conditions).<br>
+                        <textarea class="smallbox" placeholder="Your comments." onkeyup="adjustHeight(this)"></textarea></td>
+                    <td class="center">
+                        <label><input name="C3A" type="radio">T</label>
+                        &nbsp;
+                        <label><input name="C3A" type="radio">F</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="letter"><b>b.</b> Revisions to hypotheses and conditions are described—if 
+                        no changes were made, the author states that no changes were made.<br>
+                        <textarea class="smallbox" placeholder="Your comments." onkeyup="adjustHeight(this)"></textarea></td>
+                    <td class="center">
+                        <label><input name="C3B" type="radio">T</label>
+                        &nbsp;
+                        <label><input name="C3B" type="radio">F</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="letter"><b>c.</b> Methods are fully and clearly described—or are well-known to readers, 
+                        including potential users—researchers, students, and managers.<br>
+                        <textarea class="smallbox" placeholder="Your comments." onkeyup="adjustHeight(this)"></textarea></td>
+                    <td class="center">
+                        <label><input name="C3C" type="radio">T</label>
+                        &nbsp;
+                        <label><input name="C3C" type="radio">F</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="letter"><b>d.</b> Data are easily accessible using information provided in the paper.<br>
+                        <textarea class="smallbox" placeholder="Your comments." onkeyup="adjustHeight(this)"></textarea></td>
+                    <td class="center">
+                        <label><input name="C3D" type="radio">T</label>
+                        &nbsp;
+                        <label><input name="C3D" type="radio">F</label>
+                    </td>
+                </tr>
+
+                <tr class="criterionrow">
+                    <td class="criterion">4. Design was objective <i>(unbiased by advocacy for a preferred hypothesis)</i>.
+                        <br>
+                        <textarea class="largebox" placeholder="Your comments." onkeyup="adjustHeight(this)"></textarea></td>
+                    <td><input type="checkbox">Complies</td>
+                </tr>
+                <tr>
+                    <td class="letter"><b>a.</b> All reasonable hypotheses <i>(including credible, naive, no-change,
+                        no-meaningful-difference, and current-practice hypotheses)</i> tested fairly.<br>
+                        <textarea class="smallbox" placeholder="Your comments." onkeyup="adjustHeight(this)"></textarea></td>
+                    <td class="center">
+                        <label><input name="C4A" type="radio">T</label>
+                        &nbsp;
+                        <label><input name="C4A" type="radio">F</label>
+                    </td>
+                </tr>
+
+                <tr class="criterionrow">
+                    <td class="criterion">5. Data are valid (true measures) and reliable (repeatable measures).
+                            <br>
+                            <textarea class="largebox" placeholder="Your comments." onkeyup="adjustHeight(this)"></textarea>
+                    </td>
+                    <td><input type="checkbox">Complies</td>
+                </tr>
+                <tr>
+                    <td class="letter"><b>a.</b> Data were shown to be relevant to the problem, or relevance was obvious.<br>
+                        <textarea class="smallbox" placeholder="Your comments." onkeyup="adjustHeight(this)"></textarea></td>
+                    <td class="center">
+                        <label><input name="C5A" type="radio">T</label>
+                        &nbsp;
+                        <label><input name="C5A" type="radio">F</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="letter"><b>b.</b> All relevant data were used, including longest relevant time-series 
+                        for time-series problems.<br>
+                        <textarea class="smallbox" placeholder="Your comments." onkeyup="adjustHeight(this)"></textarea></td>
+                        <td class="center">
+                            <label><input name="C5B" type="radio">T</label>
+                            &nbsp;
+                            <label><input name="C5B" type="radio">na</label>
+                            &nbsp;
+                            <label><input name="C5B" type="radio">F</label>
+                        </td>
+                </tr>
+                <tr>
+                    <td class="letter"><b>c.</b> Reliability of data was assessed, or was obvious.<br>
+                        <textarea class="smallbox" placeholder="Your comments." onkeyup="adjustHeight(this)"></textarea></td>
+                    <td class="center">
+                        <label><input name="C5C" type="radio">T</label>
+                        &nbsp;
+                        <label><input name="C5C" type="radio">na</label>
+                        &nbsp;
+                        <label><input name="C5C" type="radio">F</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="letter"><b>d.</b> Other information needed for assessing the validity of the data is provided, 
+                        such as known shortcomings and potential biases.<br>
+                        <textarea class="smallbox" placeholder="Your comments." onkeyup="adjustHeight(this)"></textarea></td>
+                    <td class="center">
+                        <label><input name="C5D" type="radio">T</label>
+                        &nbsp;
+                        <label><input name="C5D" type="radio">na</label>
+                        &nbsp;
+                        <label><input name="C5D" type="radio">F</label>
+                    </td>
+                </tr>
+
+                <tr class="criterionrow">
+                    <td class="criterion">6. Methods were valid (proven fit for purpose) and simple.<br>
+                        <textarea class="largebox" placeholder="Your comments." onkeyup="adjustHeight(this)"></textarea>
+                    </td>
+                    <td><input type="checkbox">Complies</td>
+                </tr>
+                <tr>
+                    <td class="letter"><b>a.</b> Methods were shown to be valid—unless obvious to intended readers, 
+                        users, and reviewers—<i>and explained in plain English</i>.<br>
+                        <textarea class="smallbox" placeholder="Your comments." onkeyup="adjustHeight(this)"></textarea></td>
+                    <td class="center">
+                        <label><input name="C6A" type="radio">T</label>
+                        &nbsp;
+                        <label><input name="C6A" type="radio">F</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="letter"><b>b.</b> Multiple validated methods were used.<br>
+                        <textarea class="smallbox" placeholder="Your comments." onkeyup="adjustHeight(this)"></textarea></td>
+                    <td class="center">
+                        <label><input name="C6B" type="radio">T</label>
+                         &nbsp;
+                        <label><input name="C6B" type="radio">na</label>
+                        &nbsp;
+                        <label><input name="C6B" type="radio">F</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="letter"><b>c.</b> Methods used cumulative scientific knowledge explicitly.<br>
+                        <textarea class="smallbox" placeholder="Your comments." onkeyup="adjustHeight(this)"></textarea></td>
+                    <td class="center">
+                        <label><input name="C6C" type="radio">T</label>
+                        &nbsp;
+                        <label><input name="C6C" type="radio">na</label>
+                        &nbsp;
+                        <label><input name="C6C" type="radio">F</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="letter"><b>d.</b> Methods were sufficiently simple for potential users to understand.<br>
+                        <textarea class="smallbox" placeholder="Your comments." onkeyup="adjustHeight(this)"></textarea></td>
+                    <td class="center">
+                        <label><input name="C6D" type="radio">T</label>
+                        &nbsp;
+                        <label><input name="C6D" type="radio">na</label>
+                        &nbsp;
+                        <label><input name="C6D" type="radio">F</label>
+                    </td>
+                </tr>
+
+                <tr class="criterionrow">
+                    <td class="criterion">7. Experimental evidence was used to compare alternative hypotheses.
+                            <br>
+                            <textarea class="largebox" placeholder="Your comments." onkeyup="adjustHeight(this)"></textarea>
+                    </td>
+                    <td><input type="checkbox">Complies</td>
+                </tr>
+                <tr>
+                    <td class="letter"><b>a.</b> Experimental evidence was used to compare hypotheses 
+                        under explicit conditions.<br>
+                        <textarea class="smallbox" placeholder="Your comments." onkeyup="adjustHeight(this)"></textarea></td>
+                    <td class="center">
+                        <label><input name="C7A" type="radio">T</label>
+                        &nbsp;
+                        <label><input name="C7A" type="radio">F</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="letter"><b>b.</b> Predictive validity of hypotheses was tested using out-of-sample data.<br>
+                        <textarea class="smallbox" placeholder="Your comments." onkeyup="adjustHeight(this)"></textarea></td>
+                    <td class="center">
+                        <label><input name="C7B" type="radio">T</label>
+                        &nbsp;
+                        <label><input name="C7B" type="radio">F</label>
+                    </td>      
+                </tr>
+
+                <tr class="criterionrow">
+                    <td class="criterion">8. Conclusions follow logically from the evidence presented.
+                            <br>
+                            <textarea class="largebox" placeholder="Your comments." onkeyup="adjustHeight(this)"></textarea>
+                    </td>
+                    <td><input type="checkbox">Complies</td>
+                </tr>
+                <tr>
+                    <td class="letter"><b>a.</b> Conclusions do not go beyond the evidence presented in the paper.<br>
+                        <textarea class="smallbox" placeholder="Your comments." onkeyup="adjustHeight(this)"></textarea></td>
+                    <td class="center">
+                        <label><input name="C8A" type="radio">T</label>
+                        &nbsp;
+                        <label><input name="C8A" type="radio">F</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" id="summary">
+                        Summary Comments:<br>
+                        <textarea id="summarybox" placeholder="Your comments." onkeyup="adjustHeight(this)"></textarea>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </form>
+    </section>
+
+    <h2 class="subtitle" id="scientistschecklist">Guidelines for Scientists</h2>
+
+    <section id="checklist2">
+        
+        <ol>
+            <h4>Selecting a problem</h4>
+            <li>
+                <input type="checkbox" value="item1">Seek problems for which findings are likely 
+                to provide benefits without duress or deceit
+            </li>
+            <li>
+                <input type="checkbox" value="item2">Be skeptical about findings, theories, policies, 
+                methods, and data, especially absent experimental evidence
+            </li>
+            <li>
+                <input type="checkbox" value="item3">Consider replications and extensions of useful 
+                scientific papers 
+            </li>
+            <li>
+                <input type="checkbox" value="item4">Ensure that you can address the problem objectively 
+            </li>
+            <li>
+                <input type="checkbox" value="item5">If you need funding, ensure that you will nevertheless 
+                have control over all aspects of your study 
+            </li>
+
+            <h4>Designing a study</h4>
+            <li>
+                <input type="checkbox" value="item6">Acquire existing knowledge about the problem 
+            </li>
+            <li>
+                <input type="checkbox" value="item7">Develop multiple reasonable hypotheses with 
+                specified conditions
+            </li>
+            <li>
+                <input type="checkbox" value="item8">Design experiments with specified conditions 
+                that can test the predictive validity of hypotheses 
+            </li>
+
+            <h4>Collecting data</h4>
+            <li>
+                <input type="checkbox" value="item9">Obtain all valid data; do not use non-experimental 
+                data to identify causal variables 
+            </li>
+            <li>
+                <input type="checkbox" value="item10">Ensure that the data are reliable  
+            </li>
+
+            <h4>Analyzing data</h4>
+            <li>
+                <input type="checkbox" value="item11">Use methods that incorporate cumulative knowledge 
+            </li>
+            <li>
+                <input type="checkbox" value="item12">Use simple methods 
+            </li>
+            <li>
+                <input type="checkbox" value="item13">Use multiple validated methods
+            </li>
+            <li>
+                <input type="checkbox" value="item14">Estimate effect sizes and prediction intervals
+            </li>
+            <li>
+                <input type="checkbox" value="item15">Draw logical conclusions on the practical 
+                implications of findings from the tests of hypotheses
+            </li>
+
+            <h4>Writing a scientific paper</h4>
+            <li>
+                <input type="checkbox" value="item16">Disclose research hypotheses, methods, and data 
+            </li>
+            <li>
+                <input type="checkbox" value="item17">Cite all relevant scientific papers when presenting evidence
+            </li>
+            <li>
+                <input type="checkbox" value="item18">Ensure summaries of cited prior findings are necessary and correct
+            </li>
+            <li>
+                <input type="checkbox" value="item19">Explain why your findings are useful
+            </li>
+            <li>
+                <input type="checkbox" value="item20">Write clearly and succinctly for the widest audience for 
+                whom the findings might be useful
+            </li>
+            <li>
+                <input type="checkbox" value="item21">Obtain extensive peer review and editing <i>before</i> 
+                submitting a paper for publication
+            </li>
+
+            <h4>Disseminating the findings</h4>
+            <li>
+                <input type="checkbox" value="item22">Provide thorough responses to journal reviewers, and 
+                appeal to editors if you have useful scientific findings
+            </li>
+            <li>
+                <input type="checkbox" value="item23">Consider alternative ways to publish your findings
+            </li>
+            <li>
+                <input type="checkbox" value="item24">Inform those who can use your findings
+            </li>
+        </ol>
+        
+    </section>
+    
+</body>
+
+<foot>
+    <style>
+        html {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px; 
+}
+
+em {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    color: red;
+}
+
+h1, h2, h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+#mainTitle {
+    font-size: 4rem;
+}
+
+.subtitle {
+    font-size: 2.5rem;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 { 
+    font-size: 1.5rem; 
+    margin-bottom: 0.2rem; 
+    margin-top: 0.4rem;}
+
+nav, nav > button {
+    text-align: center;
+    line-height: 1.2em;
+    padding: 1rem;
+}
+
+nav {
+    background-color: rgb(240, 235, 183);
+    font-size: 2.5rem;
+    border-radius: 10px;
+}
+
+nav > button {
+    font-size: 1.5rem;
+    border-radius: 10px;
+    text-shadow: 1px 1px 4px rgb(177, 175, 175);
+    outline: none;  
+}
+
+nav > button:hover {
+    box-shadow: 0 0 15px lightskyblue;
+}
+
+#instructions {
+    border: 2px solid navy;
+    margin-bottom: 3rem;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+#instructions > section {
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+#checklist1 {
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+#checklist2 > * {
+    padding-left: 6vw;
+    padding-right: 6vw;
+} 
+
+table {
+    border-collapse: collapse;
+}
+
+table #complies {
+    width: 6em;;
+}
+
+.criterionrow, #summary {
+    border-top: 5px solid navy;
+}
+
+.criterion, #summary {
+    padding-left: 0.5rem;
+    padding-right: 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.letter {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: rgb(37, 36, 36);
+}
+
+.largebox { width: 73vw; min-height: 3em;
+    margin-top: 0.5em; margin-bottom: 0.5em;
+    border: 1px rgb(119, 117, 117) solid; 
+    resize: none; }
+
+.smallbox { width: 60vw; min-height: 2em;
+    margin-top: 0.5em; margin-bottom: 0.5em;
+    border: 0.5px rgb(119, 117, 117) solid; }
+
+#summarybox { width: 82vw; min-height: 5em; 
+    margin-top: 0.5em; margin-bottom: 1em; 
+    border: 1.5px rgb(119, 117, 117) solid; }
+
+input[type=radio] {
+    display: block;
+    margin: auto;
+    outline: none;
+}
+
+label {
+    display: inline-block;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.display {
+    text-align: left;
+    font-size: 1rem; 
+    line-height: 1.1em;
+    padding-left: 15vw;
+    padding-right: 15vw; 
+    padding-top: 2em;
+    display: none;
+}
+    </style>
+
+    <script>
+        function toggle_visibility(id, id2) {
+    var e = document.getElementById(id);
+    var f = document.getElementById(id2);
+    f.style.display = 'none';
+    if(e.style.display == 'block')
+       e.style.display = 'none';
+    else
+       e.style.display = 'block';
+ }
+
+ function adjustHeight(e) {
+    e.style.height = "1px";
+    e.style.height = (e.scrollHeight)+"px";
+}
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</foot>
+</html>
